@@ -1,7 +1,7 @@
-class Rational { 
+public class Rational { 
     long numerator,denominator; 
 
-    class Illegal extends Exception { 
+    public class Illegal extends Exception { 
         String reason; 
         Illegal (String reason) { 
             this.reason = reason; 

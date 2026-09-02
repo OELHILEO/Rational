@@ -85,13 +85,13 @@ public class RationalTest {
         r1.denominator = 2;
         r2.numerator = 2;
         r2.denominator = 4;
-        Assert.assertTrue(r1.equals(r2));
+        Assert.assertEquals(r1, r2);
 
         r2.numerator = 1;
         r2.denominator = 3;
-        Assert.assertFalse(r1.equals(r2));
-        Assert.assertFalse(r1.equals(null));
-        Assert.assertFalse(r1.equals("1/2"));
+        Assert.assertNotEquals(r1, r2);
+        Assert.assertNotEquals(r1, null);
+        Assert.assertNotEquals(r1, "1/2");
     }
 
     /***
