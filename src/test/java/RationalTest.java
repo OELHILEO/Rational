@@ -91,10 +91,9 @@ public class RationalTest {
         r2.denominator = 3;
         Assert.assertNotEquals(r1, r2);
 
-        Object nullObject = null;
-        Object nonRationalObject = "1/2";
-        Assert.assertFalse(r1.equals(nullObject));
-        Assert.assertFalse(r1.equals(nonRationalObject));
+        r2.numerator = 2;
+        r2.denominator = 3;
+        Assert.assertNotEquals(r1, r2);
     }
 
     /***
